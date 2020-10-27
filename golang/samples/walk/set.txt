@@ -1,0 +1,2 @@
+go get github.com/lxn/walk
+rsrc -manifest test.manifest -o rsrc.syso
