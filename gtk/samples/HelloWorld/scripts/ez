@@ -1,0 +1,1 @@
+gcc helloworld.c -o test `pkg-config --libs --cflags gtk+-3.0`

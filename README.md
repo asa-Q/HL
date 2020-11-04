@@ -8,3 +8,5 @@ wget http://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 ./configure
 make
 make install
+
+apt-get install gnome-devel
