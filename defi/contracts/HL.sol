@@ -5,7 +5,7 @@ import "./lib/token/ERC20/ERC20.sol";
 import "./lib/math/SafeMath.sol";
 
 
-contract Hulu is ERC20("Hulu", "XI"){
+contract HL is ERC20("HL", "XI"){
     using SafeMath for uint256;
     IERC20 public yi;
 
