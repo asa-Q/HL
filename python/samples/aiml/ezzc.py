@@ -19,11 +19,11 @@ k.respond("load aiml b")
 # Loop forever, reading user input from the command
 # line and printing responses.
 while True: 
-    message = raw_input("> ")
+    message = input("> ")
     if message == "quit":
         exit()
     elif message == "save":
         k.saveBrain("data/ezBrain.brn")
     else:
         bot_response = k.respond(message)
-        print bot_response
+        print(bot_response)
