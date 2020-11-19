@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 import aiml
 
 # The Kernel object is the public interface to
@@ -16,4 +18,12 @@ k.respond("load aiml b")
 
 # Loop forever, reading user input from the command
 # line and printing responses.
-while True: print k.respond(raw_input("> "))
+while True: 
+    message = raw_input("> ")
+    if message == "quit":
+        exit()
+    elif message == "save":
+        k.saveBrain("data/ezBrain.brn")
+    else:
+        bot_response = k.respond(message)
+        print bot_response
